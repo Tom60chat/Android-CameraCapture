@@ -86,7 +86,7 @@ class CameraXVideoCapture(private val context: FragmentActivity, private val pre
                 )
             } catch (exc: Exception) {
                 // we are on main thread, let's reset the controls on the UI.
-                Log.e(CameraFragment.TAG, "Use case binding failed", exc)
+                Log.e(TAG, "Use case binding failed", exc)
             }
         },  mainThreadExecutor)
     }
@@ -124,7 +124,7 @@ class CameraXVideoCapture(private val context: FragmentActivity, private val pre
             .apply { if (audioEnabled) withAudioEnabled() }
             .start(mainThreadExecutor, captureListener)
 
-        Log.i(CameraFragment.TAG, "Recording started")
+        Log.i(TAG, "Recording started")
     }
 
     fun pauseRecording() {
