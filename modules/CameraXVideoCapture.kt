@@ -17,7 +17,6 @@ import androidx.core.util.Consumer
 import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.FragmentActivity
 import fr.katycorp.dashcam.R
-import fr.katycorp.dashcam.fragments.CameraFragment
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
